@@ -20,7 +20,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    height: 100px;
+    height: auto;
 }
 
 .menu ul li {
