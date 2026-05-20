@@ -50,7 +50,7 @@
     color: white;
 }
 
-a {
+.menu ul li a {
     font-weight: bold;
     font-size: 15px;
 }

@@ -1,52 +1,55 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TURISMO PERÚ</title>
     <link rel="stylesheet" href="../css/menu.css">
     <style>
-        * {
-            padding: 0px;
-            margin: 0px;
+        *{
+            box-sizing: border-box;
         }
-
         .contenedor {
-            width: 1200px;
+            width: 100%;
             height: 600px;
-            margin: 0 auto;
             position: relative;
             overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         /* hasta aqui preparar para todas las clases */
 
         .tarjeta1,.tarjeta2,.tarjeta3,.tarjeta4 {
-            width: 300px;
+            width: 25%;
             top: -600px;
             height: 600px;
             position: absolute;
             background-size: cover;
+            background-position: center;
         }
 
         .tarjeta1 {
-            left: 0px;
+            left: 0%;
             background-image: url(img/mar.jpg);
             animation: tarjeta1 3s 1 forwards;
         }
 
         .tarjeta2 {
-            left: 300px;
+            left: 25%;
             background-image: url(img/costa.jpg);
             animation: tarjeta1 3s 1 forwards 3s;
         }
 
         .tarjeta3 {
-            left: 600px;
+            left: 50%;
             background-image: url(img/sierra.jpg);
             animation: tarjeta1 3s 1 forwards 6s;
         }
 
         .tarjeta4 {
-            left: 900px;
+            left: 75%;
             background-image: url(img/selva.jpg);
             animation: tarjeta1 3s 1 forwards 9s;
         }
@@ -94,7 +97,7 @@
 
         .texto {
             width: 100%;
-            height: 50px;
+            height: auto;
             font-size: 25px;
             top: -300px;
             padding: 20px;
@@ -104,6 +107,7 @@
             text-align: center;
             color: blanchedalmond;
             z-index: 2;
+            left: 0;
         }
 
         @keyframes texto {
@@ -126,6 +130,13 @@
             background-color: aliceblue;
             color: black;
         }
+        .cajita{
+            width: 100%;
+            max-width: 1200px;
+            height: 600px;
+            position: relative;
+            margin: 0 auto;
+        }
     </style>
 </head>
 
@@ -140,17 +151,20 @@
             <li><a href="../ANIMACION5/abeja.html">Abeja</a></li>
             <li><a href="../ANIMACION6/lugares.html">Turísmo Perú</a></li>
             <li><a href="../ANIMACION7/lenguajes.html">HTML - CSS - JS</a></li>
+            <li><a href="../ANIMACION8/cocos.html">Cocos</a></li>
         </ul>
     </nav>
     <div class="contenedor">
-        <div class="tarjeta1"></div>
-        <div class="tarjeta2"></div>
-        <div class="tarjeta3"></div>
-        <div class="tarjeta4"></div>
-        <div class="texto">
-            <h1>LUGARES TURÍSTICOS</h1>
+        <div class="cajita">
+            <div class="tarjeta1"></div>
+            <div class="tarjeta2"></div>
+            <div class="tarjeta3"></div>
+            <div class="tarjeta4"></div>
+            <div class="texto">
+                <h1>LUGARES TURÍSTICOS</h1>
+            </div>
         </div>
+        
     </div>
 </body>
-
 </html>

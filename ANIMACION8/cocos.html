@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMACION DE COCOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/menu.css">
+    <style>
+        body{
+            background-color: black;
+            font-family: "Rubik", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+        .contenedor{
+            box-shadow: 0 0 60px hsla(47, 100%, 63%, 0.185);
+            width: 400px;
+            height: 700px;
+            background-color: #ffd542;
+            position: relative;
+            overflow: hidden;
+            margin:0 auto;
+            animation: contenedor 8s ease-in 8.5s forwards;
+        }
+        @keyframes contenedor{
+            0%{
+                transition: 1;
+                background-image: url(img/verano1.jpg);
+                background-size: cover;
+            }
+            100%{
+                transition: 1;
+                background-image: url(img/verano1.jpg);
+                background-size: cover;
+            }
+        }
+        .rama{
+            width: 300px;
+            height: 400px;
+            background-image: url(img/RAMA.png);
+            background-size: cover;
+            position: absolute;
+            left:140px;
+            top:-160px;
+            rotate: 10deg;
+            animation: rama 1.5s infinite alternate linear;
+        }
+        @keyframes rama {
+            from{
+                rotate:10deg;
+            }
+            to{
+                rotate:22deg;
+            }
+        }
+        .corama{
+            position: absolute;
+            opacity: 0;
+            left:0px;
+            top:0px;
+            animation: corama 9.5s alternate linear;
+        }
+        @keyframes corama {
+            0%,10%,50%,60%,70%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+        .cuadrito1{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            background-image: url(img/mitad_coco2.png);
+            background-size: cover;
+            top:-200px;
+            left: 250px;
+            z-index: 1;
+            animation: cuadrito1 4s forwards;
+        }
+        @keyframes cuadrito1{
+            0%{
+                top:-100px;
+            }
+            20%, 40%{
+                top: 550px;
+            }
+            50%{
+                top: 550px;
+                rotate: -10deg;
+            }
+            60%,80%{
+                top:550px;
+            }
+            100%{
+                top:700px;
+                rotate:0deg;
+            }
+        }
+        .cuadrito2{
+            height: 100px;
+            width: 100px;
+            background-image: url(img/mitad_coco2.png);
+            background-size: cover;
+            position: absolute;
+            z-index: 1;
+            left:200px;
+            top:-100px;
+            animation: cuadrito2 4s forwards 0.5s;
+        }
+        @keyframes cuadrito2{
+            0%{
+                top:-100px;
+            }
+            20%, 40%{
+                top:390px;
+            }50%{
+                top:390px;
+                rotate: -10deg;
+            }
+            60%,80%{
+                top:390px;
+            }
+            100%{
+                top:700px;
+                rotate:0deg;
+            }
+        }
+        .cuadrito3{
+            height: 100px;
+            width: 100px;
+            background-image: url(img/mitad_coco.png);
+            background-size: cover;
+            position: absolute;
+            z-index: 1;
+            left:50px;
+            top:-100px;
+            animation: cuadrito3 4s forwards 0.5s;
+        }
+        @keyframes cuadrito3{
+            0%{
+                top:-100px;
+            }
+            20%, 40%{
+                top:560px;
+            }
+            50%{
+                top:560px;
+                rotate: -10deg;
+            }
+            60%,80%{
+                top:560px;
+            }
+            100%{
+                top:700px;
+                rotate:0deg;
+            }
+        }
+        .cuadrito4{
+            height: 100px;
+            width: 100px;
+            background-image: url(img/COCO3.png);
+            background-size: cover;
+            position: absolute;
+            z-index: 1;
+            left:10px;
+            top:-100px;
+            animation: cuadrito4 4s forwards 1s;
+        }
+        @keyframes cuadrito4{
+            0%{
+                top:-100px;
+            }
+            20%, 40%{
+                top:20px;
+            }
+            50%{
+                top:20px;
+                rotate:-10deg;
+            }
+            60%,80%{
+                top:20px;
+            }
+            100%{
+                top:700px;
+                rotate:0deg;
+            }
+        }
+        .cuadrito5{
+            height: 100px;
+            width: 100px;
+            background-image: url(img/mitad_coco.png);
+            background-size: cover;
+            position: absolute;
+            z-index: 1;
+            left:120px;
+            top:-100px;
+            animation: cuadrito5 4s forwards 1.5s;
+        }
+        @keyframes cuadrito5{
+            0%{
+                top:-100px;
+            }
+            20%, 40%{
+                top: 180px;
+            }
+            50%{
+                top: 180px;
+                rotate: -10deg;
+            }
+            60%,80%{
+                top:180px;
+            }
+            100%{
+                top:700px;
+                rotate:0deg;
+            }
+        }
+        .cuadrito6{
+            width: 140px;
+            height: 140px;
+            background-image: url(img/mitadcoco1.png);
+            background-size: cover;
+            position: absolute;
+            z-index: 1;
+            left:260px;
+            top:-140px;
+            rotate: 10deg;
+            animation: cuadrito6 4s forwards 1.5s;
+        }
+        @keyframes cuadrito6{
+            0%{
+                top:-100px;
+            }
+            20%, 40%{
+                top: 10px;
+            }
+            50%{
+                top: 10px;
+                rotate: -10deg;
+            }
+            60%,80%{
+                top: 10px;
+            }
+            100%{
+                top: 700px;
+                rotate:0deg;
+            }
+        }
+        .text1{
+            width: 400px;
+            height: 35px;
+            font-size: 20px;
+            color: #60340d;
+            position: absolute;
+            text-align: left;
+            top: 300px;
+            left: -400px;
+            animation: text1 4s forwards linear;
+        }
+        @keyframes text1{
+            0%{
+                left:-400px;
+            }
+            20%, 40%, 60%,80%{
+                left: 50px;
+            }
+            100%{
+                left: 400px;
+            }
+        }
+        .text2{
+            width: 400px;
+            height: 70px;
+            font-size: 40px;
+            color: #fffffb;
+            position: absolute;
+            top: 320px;
+            left: -400px;
+            animation: text2 4s forwards linear 0.5s;
+        }
+        @keyframes text2{
+            0%{
+                left:-400px;
+            }
+            20%, 40%, 60%,80%{
+                left: 50px;
+            }
+            100%{
+                left: 400px;
+            }
+        }
+        .text3{
+            width: 400px;
+            height: 70px;
+            font-size: 40px;
+            color: #fffffb;
+            position: absolute;
+            top: 365px;
+            left: -400px;
+            animation: text3 4s forwards linear 1s;
+        }
+        @keyframes text3{
+            0%{
+                left:-400px;
+            }
+            20%, 40%, 60%,80%{
+                left: 50px;
+            }
+            100%{
+                left: 400px;
+            }
+        }
+        .text4{
+            width: 400px;
+            text-align: center;
+            height: 160px;
+            font-size: 70px;
+            color: #fffffb;
+            position: absolute;
+            top: 210px;
+            /* background-color: red; */
+            left: 400px;
+            animation: text4 4s linear 5s forwards;
+        }
+        @keyframes text4{
+            0%{
+                transform: scale(1);
+                top: 210px;
+                left:400px;
+            }
+            10%, 20%, 30%{
+                top: 210px;
+                transform: scale(1);
+                left: 0px;
+                opacity: 1;
+            }
+            40%,50%,60%{
+                top: 140px;
+                left: 0px;
+                transform: scale(1);
+                opacity: 1;
+            }
+            100%{
+                transform: scale(2);
+                top: 50px;
+                left: 0px;
+                opacity: 0;
+            }
+        }
+        .text5{
+            width: 400px;
+            height: 100px;
+            font-size: 40px;
+            /* background-color: rebeccapurple; */
+            text-align: center;
+            position: absolute;
+            top: 300px;
+            z-index: 1;
+            left: 400px;
+            animation: text5 3s linear 5.1s forwards;
+            color: #60340d;
+        }
+        @keyframes text5{
+            0%{
+                left:400px;
+            }
+            20%, 40%, 60%{
+                left: 0px;
+            }
+            80%{
+                left: 0px;
+                opacity: 0;
+            }
+            100%{
+                opacity: 0;
+                left: 0px;
+            }
+        }
+        .text6{
+            width: 400px;
+            height: 90px;
+            font-size: 40px;
+            color: #fffffb;
+            text-align: center;
+            position: absolute;
+            top: 360px;
+            /* background-color: red; */
+            left: 400px;
+            animation: text6 3.7s linear 5.2s forwards;
+        }
+        @keyframes text6{
+            0%{
+                top: 360px;
+                left:400px;
+            }
+            10%, 20%, 30%{
+                top: 360px;
+                transform: scale(1);
+                left: 0px;
+                opacity: 1;
+            }
+            40%,50%,60%{
+                top: 470px;
+                left: 0px;
+                transform: scale(1);
+                opacity: 1;
+            }
+            100%{
+                transform: scale(2);
+                top: 650px;
+                left: 0px;
+                opacity: 0;
+            }
+        }
+        .cuadrito7{
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            background-size: cover;
+            top: 170px;
+            background-image: url(img/cocosolo.png);
+            opacity: 0;
+            z-index: 2;
+            animation: cuadrito7 6s ease-in 2.6s forwards;
+        }
+        @keyframes cuadrito7{
+            0%{
+                transition: 1s;
+                left:400px;
+                transform: scale(1);
+                opacity: 0;
+            }
+            10%, 20%, 30%, 40%{
+                transform: scale(1);
+                opacity: 1;
+            }
+            50%{
+                transform: scale(1);
+                opacity: 1;
+                rotate: -10deg;
+            }
+            60%,70%,80%{
+                transform: scale(1);
+                opacity: 1;
+            }
+            100%{
+                transform: scale(2);
+                opacity: 0;
+                rotate: 0deg;
+            }
+        }
+        .flor{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            background-size: cover;
+            top: 340px;
+            background-image: url(img/flor.png);
+            opacity: 0;
+            z-index: 2;
+            animation: flor 2s ease-in 6.5s forwards;
+        }
+        @keyframes flor{
+            0%{
+                transition: 1s;
+                transform: scale(1);
+                left:200px;
+                opacity: 0;
+            }
+            10%, 20%, 30%, 40%{
+                transform: scale(1);
+                left:200px;
+                opacity: 1;
+            }
+            50%{
+                transform: scale(1);
+                left:200px;
+                opacity: 1;
+                rotate: -10deg;
+            }
+            100%{
+                transform: scale(2);
+                left:200px;
+                opacity: 0;
+                rotate: 0deg;
+            }
+        }
+        .musica{
+            display: none;
+        }
+        .lata{
+            position: absolute;
+            top: 180px;
+            left: 105px;
+            width: 200px;
+            height: 370px;
+            opacity: 0;
+            z-index: 3;
+            transform: rotate(5deg);
+            background-image: url(img/lata2.png);
+            background-size: cover;
+            animation: lata 2s ease-in 8.5s infinite alternate;
+        }
+        @keyframes lata{
+            0%{
+                transition: 1s;
+                opacity: 1;
+                rotate: -2deg;
+            }
+            100%{
+                rotate: 0deg;
+                z-index: 3;
+                opacity: 1;
+            }
+        }
+        .cuadrito8{
+            position: absolute;
+            top: 70px;
+            left: 0px;
+            width: 250px;
+            height: 250px;
+            opacity: 0;
+            z-index: 2;
+            background-image: url(img/cocoentero1.png);
+            background-size: cover;
+            animation: cuadrito8 2s ease-in 9s infinite alternate;
+        }
+        @keyframes cuadrito8{
+            0%{
+                transition: 1s;
+                opacity: 1;
+                rotate: -2deg;
+            }
+            100%{
+                z-index: 2;
+                rotate: 0deg;
+                opacity: 1;
+            }
+        }
+        .cuadrito9{
+            position: absolute;
+            top: 400px;
+            left: 140px;
+            width: 250px;
+            height: 250px;
+            opacity: 0;
+            z-index: 2;
+            background-image: url(img/cocoentero2.png);
+            background-size: cover;
+            animation: cuadrito9 2s ease-in 9s infinite alternate;
+        }
+        @keyframes cuadrito9{
+            0%{
+                transition: 1s;
+                opacity: 1;
+                rotate: -2deg;
+            }
+            100%{
+                rotate: 0deg;
+                z-index: 2;
+                opacity: 1;
+            }
+        }
+        .cuadrito10{
+            position: absolute;
+            top: 370px;
+            left: 0px;
+            width: 290px;
+            height: 290px;
+            opacity: 0;
+            z-index: 2;
+            background-image: url(img/mitadcoco.png);
+            background-size: cover;
+            animation: cuadrito10 2s ease-in 9s infinite alternate;
+        }
+        @keyframes cuadrito10{
+            0%{
+                opacity: 1;
+                rotate: -2deg;
+            }
+            100%{
+                z-index: 2;
+                rotate: 0deg;
+                opacity: 1;
+            }
+        }
+        .cuadrito11{
+            position: absolute;
+            top: 240px;
+            left: 170px;
+            width: 200px;
+            height: 200px;
+            opacity: 0;
+            z-index: 2;
+            background-image: url(img/cocotranparente1.png);
+            background-size: cover;
+            animation: cuadrito11 2s ease-in 9s infinite alternate;
+        }
+        @keyframes cuadrito11{
+            0%{
+                opacity: 1;
+                rotate: -2deg;
+            }
+            100%{
+                z-index: 2;
+                rotate: 0deg;
+                opacity: 1;
+            }
+        }
+        .cuadrito12{
+            position: absolute;
+            top: 240px;
+            left: -40px;
+            width: 290px;
+            height: 290px;
+            opacity: 0;
+            z-index: 1;
+            background-image: url(img/mitadcoco3.png);
+            background-size: cover;
+            animation: cuadrito12 2s ease-in 9s infinite alternate;
+        }
+        @keyframes cuadrito12{
+            0%{
+                opacity: 1;
+                rotate: -2deg;
+            }
+            100%{
+                z-index: 1;
+                rotate: 0deg;
+                opacity: 1;
+            }
+        }
+        .cuadrito13{
+            position: absolute;
+            top: 130px;
+            left: 190px;
+            width: 120px;
+            height: 120px;
+            opacity: 0;
+            z-index: 1;
+            background-image: url(img/cococaña.png);
+            background-size: cover;
+            animation: cuadrito13 2s ease-in 9s infinite alternate;
+        }
+        @keyframes cuadrito13{
+            0%{
+                opacity: 1;
+                rotate: -2deg;
+            }
+            100%{
+                z-index: 1;
+                rotate: 0deg;
+                opacity: 1;
+            }
+        }
+        .cuadrito14{
+            position: absolute;
+            top: 480px;
+            left: 190px;
+            width: 150px;
+            height: 150px;
+            opacity: 0;
+            z-index: 4;
+            background-image: url(img/flor.png);
+            background-size: cover;
+            animation: cuadrito14 5s ease-in 9s infinite alternate;
+        }
+        @keyframes cuadrito14{
+            0%{
+                opacity: 2;
+                rotate: -2deg;
+            }
+            100%{
+                z-index: 4;
+                rotate: 0deg;
+                opacity: 1;
+            }
+        }
+        .text7{
+            width: 400px;
+            height: 35px;
+            font-size: 20px;
+            color: white;
+            position: absolute;
+            text-align: left;
+            top: 600px;
+            left: -400px;
+            animation: text7 5s linear 9s forwards;
+        }
+        @keyframes text7{
+            0%{
+                left:-400px;
+            }
+            20%, 40%, 60%,80%{
+                left: 20px;
+            }
+            100%{
+                left: 20px;
+            }
+        }
+        .text8{
+            width: 400px;
+            height: 35px;
+            font-size: 20px;
+            color: white;
+            position: absolute;
+            text-align: left;
+            top: 640px;
+            left: -400px;
+            animation: text8 4s linear 9.5s forwards;
+        }
+        @keyframes text8{
+            0%{
+                left:-400px;
+            }
+            20%, 40%, 60%,80%{
+                left: 20px;
+            }
+            100%{
+                left: 20px;
+            }
+        }
+        .figuras{
+            width: 400px;
+            height: 700px;
+            position: absolute;
+            opacity: 0;
+            animation: figuras 14s linear forwards;
+        }
+        @keyframes figuras {
+            0%,10%,50%,60%,70%,80%,90%,100%{
+                opacity: 1;
+            }
+        }
+        .final{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 300px;
+            left: 150px;
+            background-image: url(img/dfinal.png);
+            background-size: cover;
+            opacity: 0;
+            animation: final 1 ease-out 15s forwards;
+        }
+        @keyframes final {
+            0%,10%,50%,60%,70%,80%,90%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .cofinal{
+            top: 325px;
+            left: 175px;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            opacity: 0;
+            animation: cofinal 0.5s ease-out 13s forwards;
+        }
+        @keyframes cofinal{
+            0%{
+                top: 325px;
+                left: 175px;
+                width: 50px;
+                border-radius: 50%;
+                height: 50px;
+                transition: 1;
+                opacity: 0;
+            }
+            20%{
+                top: 325px;
+                left: 175px;
+                width: 50px;
+                border-radius: 50%;
+                height: 50px;
+                opacity: 1;
+                background-color: #ffd542;
+                border: 10px solid #fffffb;
+            }
+            30%{
+                top: 300px;
+                left: 150px;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                opacity: 1;
+                background-color: #ffd542;
+                border: 10px solid #fffffb;
+            }
+            40%{
+                top: 250px;
+                left: 100px;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                opacity: 1;
+                background-color: #ffd542;
+                border: 10px solid #fffffb;
+            }
+            60%{
+                top: 200px;
+                left: 50px;
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                opacity: 1;
+                background-color: #ffd542;
+                border: 10px solid #fffffb;
+            }
+            70%,80%,90%{
+                top: 0px;
+                left: 0px;
+                width: 400px;
+                height: 700px;
+                opacity: 1;
+                background-color: #ffd542;
+                border: 10px solid #fffffb;
+            }
+            100%{
+                top: 0;
+                left: 0;
+                width: 400px;
+                height: 700px;
+                opacity: 1;
+                background-color: #ffd542;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li><br>
+            <li><a href="../ANIMACION1/ajedrez.html">Ajedrez</a></li>
+            <li><a href="../ANIMACION2/biografias.html">Biografias</a></li>
+            <li><a href="../ANIMACION3/megaman.html">Megaman</a></li>
+            <li><a href="../ANIMACION4/nave.html">Nave espacial</a></li>
+            <li><a href="../ANIMACION5/abeja.html">Abeja</a></li>
+            <li><a href="../ANIMACION6/lugares.html">Turísmo Perú</a></li>
+            <li><a href="../ANIMACION7/lenguajes.html">HTML - CSS - JS</a></li>
+            <li><a href="../ANIMACION8/cocos.html">Cocos</a></li>
+        </ul>
+    </nav>
+    <div class="contenedor">
+        <div class="corama">
+            <div class="rama"></div>
+        </div>
+        <div class="cuadrito1"></div>
+        <div class="cuadrito2"></div>          
+        <div class="cuadrito3"></div>            
+        <div class="cuadrito4"></div>            
+        <div class="cuadrito5"></div> 
+        <div class="cuadrito6"></div> 
+        <div class="text1"><h2>YA PROBASTE</h2></div>
+        <div class="text2"><h2>EL - NUEVO</h2></div>
+        <div class="text3"><h2>SABOR</h2></div>          
+        <div class="text4"><h1>COCO</h1></div>
+        <div class="text5"><h1>+</h1></div>
+        <div class="text6"><h1>VAINILLA</h1></div>          
+        <div class="cuadrito7"></div>
+        <div class="flor"></div>
+        <audio class="musica" src="multimedia/musica.mp3" controls  autoplay></audio> <!-- autoplay loop  -->       
+        <div class="figuras">
+            <div class="lata"></div>
+            <div class="cuadrito8"></div>
+            <div class="cuadrito9"></div>
+            <div class="cuadrito10"></div>
+            <div class="cuadrito11"></div>
+            <div class="cuadrito12"></div>
+            <div class="cuadrito13"></div>
+            <div class="cuadrito14"></div>
+            <div class="text7"><h2>PÍDELA</h2></div>
+            <div class="text8"><h2>¡HOY MISMO!</h2></div>
+        </div>
+        <div class="cofinal"></div>
+        <div class="final"></div>
+        
+    </div>  
+</body>
+</html>

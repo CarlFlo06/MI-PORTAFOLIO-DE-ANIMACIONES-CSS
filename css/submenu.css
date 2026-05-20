@@ -1,0 +1,35 @@
+.submenu {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.submenu ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+.submenu li {
+    list-style: none;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px 25px;
+    background-color: brown;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.submenu li a:hover {
+    background-color: rgb(167, 103, 103);
+    transform: scale(1.05);
+}

@@ -1,17 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESTILOS CSS 1</title>
     <link rel="stylesheet" href="../css/menu.css">
     <style type="text/css">
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
         #cuadrito1, #cuadrito2{
             text-align: center;
             font-size: 40px;
-            height: 100px;
-            width: 100px;
+            height: 110px;
+            width: 10%;
             display: inline-block;/*Esto sirve para alinear de forma horizontal*/
         }
         #cuadrito1{
@@ -31,8 +30,8 @@
             cursor: pointer;
         }
         #contenedor1{
-            height: 100px;
-            width: 1000px;
+            height: 110px;
+            width: 100%;
             background-color: rgb(83, 47, 0);
             justify-content: center; 
             align-items: center;     
@@ -43,6 +42,31 @@
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+        .cajita{
+            width: 70%;
+        }
+        @media (max-width: 950px){
+            #caja{
+                width: 100%;
+            }
+            #contenedor1{
+                height: 60px;
+            }
+            .cajita{
+                width: 80%;
+            }
+            #cuadrito1, #cuadrito2{
+                text-align: center;
+                width: 10%;
+                height: 60px;
+            }
+            #cuadrito1 h1{
+                font-size: 50px;
+            }
+            #cuadrito2 h1{
+                font-size: 50px;
+            }
         }
     </style> 
 </head>
@@ -57,10 +81,11 @@
             <li><a href="../ANIMACION5/abeja.html">Abeja</a></li>
             <li><a href="../ANIMACION6/lugares.html">Turísmo Perú</a></li>
             <li><a href="../ANIMACION7/lenguajes.html">HTML - CSS - JS</a></li>
+            <li><a href="../ANIMACION8/cocos.html">Cocos</a></li>
         </ul>
     </nav>
     <div id="caja">
-        <div>
+        <div class="cajita">
         <div id="contenedor1"></div>
         <div id="contenedor1">
             <div id="cuadrito1"><h1>♜</h1></div>

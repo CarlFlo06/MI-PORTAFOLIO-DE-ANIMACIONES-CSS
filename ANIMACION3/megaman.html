@@ -1,14 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEGAMAN</title>
     <link rel="stylesheet" href="../css/menu.css">
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
         #contenedor{
-            width: 1200px;
+            width: 100%;
             height: 600px;
             position: relative;
             margin: 0 auto; /*centrar el contenedor*/
@@ -25,20 +24,23 @@
             top: 80px;
             left: -100px;
 
-            animation: cuadrito 3s infinite;
+            animation: cuadrito 4s infinite;
             animation-timing-function: linear; /*Por defecto esta en eacer*//*Define la forma de moverse*/
         }
         @keyframes cuadrito{
             from{
-                left: -100px;
+                left: -100%;
             }
             to{
-                left: 1200px;
+                left: 100%;
             }
         }
         #cuadrito img{
             width: 300px;
             height: 300px;
+        }
+        @media (max-width: 950px) {
+            
         }
     </style>
 </head>
@@ -53,6 +55,7 @@
             <li><a href="../ANIMACION5/abeja.html">Abeja</a></li>
             <li><a href="../ANIMACION6/lugares.html">Turísmo Perú</a></li>
             <li><a href="../ANIMACION7/lenguajes.html">HTML - CSS - JS</a></li>
+            <li><a href="../ANIMACION8/cocos.html">Cocos</a></li>
         </ul>
     </nav>
     <div id="contenedor">
