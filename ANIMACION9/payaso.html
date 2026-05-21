@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacíón de Payasito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/menu.css">
+    <style>
+        body{
+            background-image: url(img/fondito.png);
+            background-size: cover;
+            margin: 0 auto;
+            
+        }
+        .contenedor{
+            background-image: url(img/fondo.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: 0 auto;
+            width: 400px;
+            height: 700px;
+            /* background-color: skyblue; */
+            position: relative;
+            /* background-image: url(img/fondito.avif);
+            background-size: cover; */
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .gorro{
+            /* background-color: red; */
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 150px;
+            top: 100px;
+            z-index: 1;
+            background-image: url(img/cuerpo.jpg);
+            background-size: cover;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            animation: gorro 1s linear alternate infinite;
+        }
+        @keyframes gorro{
+            0%{
+                left: 140px;
+                rotate: -10deg;
+            }
+            100%{
+                left: 160px;
+                rotate: 10deg;
+            }
+        }
+        .cabeza{
+            /* background-color: blue; */
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 150px;
+            top: 175px;
+            background-image: url(img/cabeza.webp);
+            background-size: cover;
+            clip-path: circle(50% at 50% 50%);
+            animation: cabeza 1s linear alternate infinite;
+        }
+        @keyframes cabeza{
+            0%{
+                rotate: -10deg;
+            }
+            100%{
+                rotate: 10deg;
+            }
+        }
+        .cuerpo{
+            /* background-color: black; */
+            width: 200px;
+            height: 120px;
+            position: absolute;
+            left: 104px;
+            top: 265px;
+            z-index: 2;
+            background-image: url(img/cuerpo.jpg);
+            background-size: cover;
+            clip-path: polygon(39% 0, 58% 0, 78% 100%, 21% 100%);
+        }
+        .hombros{
+            width: 110px;
+            height: 30px;
+            border-radius: 10px;
+            top: 265px;
+            left: 145px;
+            position: absolute;
+            z-index: 1;
+            background-color: red;
+        }
+        .brazoI{
+            /* background-color: green; */
+            width: 100px;
+            height: 140px;
+            position: absolute;
+            left: 100px;
+            top: 265px;
+            background-image: url(img/cuerpo.jpg);
+            background-size: cover;
+            clip-path: polygon(47% 78%, 78% 9%, 56% 0%, 24% 70%, 29% 89%);
+            animation: brazoI 1s linear alternate infinite;
+        }
+        @keyframes brazoI{
+            0%{
+                left: 100px;
+                rotate: 0deg;
+            }
+            100%{
+                top: 250px;
+                left: 75px;
+                rotate: 50deg;
+            }
+        }
+        .brazoD{
+            /* background-color: green; */
+            width: 100px;
+            height: 140px;
+            position: absolute;
+            left: 204px;
+            top: 265px;
+            background-image: url(img/cuerpo.jpg);
+            background-size: cover;
+            clip-path: polygon(53% 78%, 22% 9%, 44% 0%, 76% 70%, 71% 89%);
+            animation: brazoD 1s linear alternate infinite;
+        }
+        @keyframes brazoD{
+            0%{
+                left: 204px;
+                rotate: 0deg;
+            }
+            100%{
+                top: 250px;
+                left: 230px;
+                rotate: -50deg;
+            }
+        }
+        .piernaI{
+            background-image: url(img/cuerpo.jpg);
+            background-size: cover;
+            background-color: green;
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            left: 85px;
+            top: 385px;
+            clip-path: polygon(30% 0, 60% 0, 50% 100%, 40% 100%);
+        }
+        .piernaD{
+            background-image: url(img/cuerpo.jpg);
+            background-size: cover;
+            background-color: red;
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            left: 140px;
+            top: 385px;
+            clip-path: polygon(30% 0, 60% 0, 50% 100%, 40% 100%);
+        }
+        .pieI{
+            background-color: red;
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            left: 75px;
+            top: 440px;
+            clip-path: ellipse(25% 14% at 50% 50%);
+            animation: pieI 1s linear alternate infinite;
+
+        }
+        @keyframes pieI{
+            to{
+                rotate: -20deg;
+            }
+            from{
+                rotate: 0deg;
+            }
+        }
+        .pieD{
+            background-color: red;
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            left: 180px;
+            top: 440px;
+            clip-path: ellipse(25% 14% at 50% 50%);
+            animation: pieD 1s linear alternate infinite;
+        }
+        @keyframes pieD{
+            to{
+                rotate: 20deg;
+            }
+            from{
+                rotate: 0deg;
+            }
+        }
+        .texto{
+            width: 100%;
+            height: 60px;
+            position: absolute;
+            text-align: center;
+            top: -60px;
+            animation: texto 1s linear infinite alternate forwards 1s;
+        }
+        @keyframes texto{
+            0%{
+                top: 0px;
+            }
+            20%{
+                top: 10px;
+            }
+            50%{
+                top: 20px;
+            }
+            80%{
+                top: 30px;
+            }
+            100%{
+                top: 40px;
+            }
+        }
+        audio{
+            opacity: 0;
+            position: absolute;
+            left: 175px;
+            top: 200px;
+            clip-path: circle(15px at 25px 25px);
+        }
+        h1, p{
+            background-color: rgb(240, 248, 255);
+            color: rgb(13, 1, 121);
+        }
+        p{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li><br>
+            <li><a href="../ANIMACION1/ajedrez.html">Ajedrez</a></li>
+            <li><a href="../ANIMACION2/biografias.html">Biografias</a></li>
+            <li><a href="../ANIMACION3/megaman.html">Megaman</a></li>
+            <li><a href="../ANIMACION4/nave.html">Nave espacial</a></li>
+            <li><a href="../ANIMACION5/abeja.html">Abeja</a></li>
+            <li><a href="../ANIMACION6/lugares.html">Turísmo Perú</a></li>
+            <li><a href="../ANIMACION7/lenguajes.html">HTML - CSS - JS</a></li>
+            <li><a href="../ANIMACION8/cocos.html">Cocos</a></li>
+            <li><a href="../ANIMACION9/payaso.html">Payaso</a></li>
+            <li><a href="../ANIMACION9/oso.html">Oso</a></li>
+        </ul>
+    </nav>
+    <div class="contenedor">
+        <div class="texto"><h1>El payasito rocotito</h1><p>No le des clic a la nariz</p></div>
+        <div class="gorro"></div>
+        <div class="cabeza"></div>
+        <div class="cuerpo"></div>
+        <div class="hombros"></div>
+        <div class="brazoI"></div>
+        <div class="brazoD"></div>
+        <div class="piernaI"></div>
+        <div class="piernaD"></div>
+        <div class="pieI"></div>
+        <div class="pieD"></div>
+        <div class="audio">
+            <audio src="audio/Oiga caballero !.mp3" controls></audio>
+        </div>
+    </div>
+</body>
+</html>
