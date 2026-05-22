@@ -9,43 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/menu.css">
     <style>
-        .body{
+        body{
             background-image: url(img/fondooso1.jpg);
             background-repeat: no-repeat;
             background-size: cover;
         }
         .contenedor {
             position: relative;
-            margin: 0 auto;
             width: 400px;
             height: 700px;
-            /* background-color: skyblue; */
-            position: relative;
-            background-image: url(img/fondooso.avif);
-            background-repeat: no-repeat;
             background-size: cover;
             margin: 0 auto;
             overflow: hidden;
-        }
-        .cuerpo {
-            position: absolute;
-            width: 450px;
-            height: 400px;
-            background-color: rgb(95, 58, 1);
-            clip-path: ellipse(25% 40% at 50% 50%);
-            left: -20px;
-            top: 190px;
-            z-index: 1;
-        }
-        .panza {
-            position: absolute;
-            width: 350px;
-            height: 360px;
-            background-color: rgb(141, 63, 10);
-            clip-path: ellipse(25% 40% at 50% 50%);
-            left: 30px;
-            top: 220px;
-            z-index: 2;
         }
         .cabeza {
             background-color: rgb(95, 58, 1);
@@ -65,6 +40,15 @@
             clip-path: ellipse(25% 40% at 50% 50%);
             left: 100px;
             top: 60px;
+            animation: oreja1 2s linear alternate infinite;
+        }
+        @keyframes oreja1{
+            from{
+                rotate: -30deg;
+            }
+            to{
+                rotate: 0deg;
+            }
         }
         .oreja2{
             width: 100px;
@@ -74,6 +58,15 @@
             clip-path: ellipse(25% 40% at 50% 50%);
             left: 200px;
             top: 60px;
+            animation: oreja2 2s linear alternate infinite;
+        }
+        @keyframes oreja2{
+            from{
+                rotate: 30deg;
+            }
+            to{
+                rotate: 0deg;
+            }
         }
         .nariz {
             position: absolute;
@@ -114,7 +107,6 @@
         .ojo1 {
             left: 160px;
         }
-
         .ojo2 {
             left: 200px;
         }
@@ -130,7 +122,6 @@
         .ojito1 {
             left: 170px;
         }
-
         .ojito2 {
             left: 210px;
         }
@@ -144,85 +135,125 @@
             position: absolute;
             clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
         }
-        .brazo1,.brazo2 {
+        .cuerpo {
+            position: absolute;
+            width: 450px;
+            height: 400px;
+            background-color: rgb(95, 58, 1);
+            clip-path: ellipse(25% 40% at 50% 50%);
+            left: -20px;
+            top: 190px;
+            z-index: 1;
+        }
+        .panza {
+            position: absolute;
+            width: 350px;
+            height: 360px;
+            background-color: rgb(141, 63, 10);
+            clip-path: ellipse(25% 40% at 50% 50%);
+            left: 30px;
+            top: 220px;
+            z-index: 2;
+        }
+        .pata1{
             position: absolute;
             width: 80px;
             height: 290px;
-            background-color: rgb(95, 58, 1);
-            top: 100px;
-            clip-path: polygon(50% 0%,100% 20%,100% 100%,0% 100%,0% 20%);
-        }
-        .brazo1 {
             left: 50px;
+            top: 100px;
+            background-color: rgb(95, 58, 1);
             transform: rotate(-30deg);
+            clip-path: polygon(50% 0%,100% 20%,100% 100%,0% 100%,0% 20%);
+            animation: pata1 2s linear alternate infinite;
+            
         }
-        .brazo2 {
-            right: 50px;
-            transform: rotate(30deg);
+        @keyframes pata1{
+            from{
+                rotate: -10deg;
+            }
+            to{
+                rotate: 0deg;
+            }
         }
         .huella1,.huella2,.huella3{
             position: absolute;
             width: 20px;
             height: 30px;
-            rotate: -30deg;
             z-index: 4;
             background-color: plum;
             clip-path: ellipse(25% 40% at 50% 50%);
+            
         }
         .huella1{
-            top: 165px;
-            left: 15px;
+            top: 35px;
+            left: 10px;
         }
         .huella2{
-            top: 138px;
-            left: 25px;
+            top: 15px;
+            left: 30px;
         }
         .huella3{
-            top: 145px;
-            left: 58px;
+            top: 35px;
+            left: 50px;
         }
         .palma1{
             position: absolute;
             width: 80px;
             height: 70px;
-            top: 170px;
-            left: 28px;
-            rotate: -20deg;
+            top: 50px;
+            left: 1px;
             z-index: 4;
             background-color: plum;
             clip-path: ellipse(25% 40% at 50% 50%);
         }
-        .palma2{
+        .pata2{
             position: absolute;
+            top: 100px;
             width: 80px;
-            height: 70px;
-            top: 170px;
-            left: 290px;
-            rotate: 30deg;
-            z-index: 4;
-            background-color: plum;
-            clip-path: ellipse(25% 40% at 50% 50%);
+            height: 290px;
+            transform: rotate(30deg);
+            background-color: rgb(95, 58, 1);
+            clip-path: polygon(50% 0%,100% 20%,100% 100%,0% 100%,0% 20%);
+            animation: pata2 2s linear alternate infinite;
+            left: 270px;
+        }
+        @keyframes pata2{
+            from{
+                rotate: 10deg;
+            }
+            to{
+                rotate: 0deg;
+            }
         }
         .huella4,.huella5,.huella6{
             position: absolute;
             width: 20px;
             height: 30px;
-            rotate: 30deg;
             z-index: 4;
             background-color: plum;
             clip-path: ellipse(25% 40% at 50% 50%);
         }
         .huella4{
-            top: 145px;
-            left: 325px;
+            top: 35px;
+            left: 10px;
         }
         .huella5{
-            top: 140px;
-            left: 355px;
+            top: 15px;
+            left: 30px;
         }
         .huella6{
-            top: 165px;
-            left: 365px;
+            top: 35px;
+            left: 50px;
+        }
+        .palma2{
+            position: absolute;
+            width: 80px;
+            height: 70px;
+            top: 50px;
+            left: 0px;
+            z-index: 4;
+            background-color: plum;
+            clip-path: ellipse(25% 40% at 50% 50%);
         }
         .piernaI{
             background-color: rgb(95, 58, 1);
@@ -266,6 +297,11 @@
             z-index: 4;
             clip-path: circle(15px at 25px 25px);
         }
+        .texto{
+            text-align: center;
+            background-color: yellow;
+            color: black;
+        }
     </style>
 </head>
 
@@ -286,6 +322,9 @@
         </ul>
     </nav>
     <div class="contenedor">
+        <div class="texto">
+            <h1>¡Peligro! No le toques el hocico</h1>
+        </div>
         <div class="cabeza"></div>
         <div class="oreja1"></div>
         <div class="oreja2"></div>
@@ -297,16 +336,18 @@
         <div class="ojito1"></div>
         <div class="ojito2"></div>
         <div class="boca"></div>
-        <div class="brazo1"></div>
-        <div class="huella1"></div>
-        <div class="huella2"></div>
-        <div class="huella3"></div>
-        <div class="palma1"></div>
-        <div class="huella4"></div>
-        <div class="huella5"></div>
-        <div class="huella6"></div>
-        <div class="palma2"></div>
-        <div class="brazo2"></div>
+        <div class="pata1">
+            <div class="huella1"></div>
+            <div class="huella2"></div>
+            <div class="huella3"></div>
+            <div class="palma1"></div>
+        </div>
+        <div class="pata2">
+            <div class="huella4"></div>
+            <div class="huella5"></div>
+            <div class="huella6"></div>
+            <div class="palma2"></div>
+        </div>
         <div class="cuerpo"></div>
         <div class="panza"></div>
         <div class="piernaI"></div>
