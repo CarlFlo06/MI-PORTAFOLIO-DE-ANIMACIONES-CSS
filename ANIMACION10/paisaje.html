@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMANA 6 - EFECTO PARALLAX</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+        }
+        .contenedor{
+            width: 400px;
+            height: 700px;
+            border: 1px solid white;
+            overflow: hidden;
+            margin: 0 auto;
+            position: relative;
+        }
+        .cielo{
+            width: 700px;
+            position: absolute;
+            left: -150px;
+            z-index: 1;
+            animation: cielo 30s 1 forwards;
+        }
+        @keyframes cielo{
+            from{
+                filter: blur(5px);
+                scale: 100%;
+            }
+            to{
+                filter: blur(0px);
+                scale: 140%;
+            }
+        }
+        .paisaje{
+            width: 800px;
+            position: absolute;
+            left: -150px;
+            z-index: 2;
+            animation: paisaje 20s 1 forwards;
+        }
+        @keyframes paisaje{
+            from{
+                top: 0;
+                scale: 100%;
+                filter: blur(2px);
+            }
+            to{
+                top: -50px;
+                filter: blur(0px);
+                /* scale: 140%; */
+            }
+        }
+        .vapor{
+            width: 200%;
+            position: absolute;
+            z-index: 4;
+            top: 400px;
+            animation: vapor 10s 1 forwards;
+        }
+        @keyframes vapor{
+            from{
+                left: 0px;
+            }
+            to{
+                left: -200px;
+            }
+        }
+        .persona{
+            width: 800px;
+            position: absolute;
+            left: -200px;
+            top: 250px;
+            z-index: 3;
+            animation: persona 15s 1 forwards;
+        }
+        @keyframes persona{
+            from{
+                filter: grayscale(100%);
+                top: 250px;
+                scale: 80%;
+            }
+            to{
+                top: 200px;
+                scale: 120%;
+                filter: grayscale(0%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul class="listamenu">
+            <li><a href="../index.html">Inicio</a></li><br>
+            <li><a href="../ANIMACION1/ajedrez.html">Ajedrez</a></li>
+            <li><a href="../ANIMACION2/biografias.html">Biografias</a></li>
+            <li><a href="../ANIMACION3/megaman.html">Megaman</a></li>
+            <li>
+                <a class="subm"  href="#">Movimiento y tiempos</a>
+                <ul class="submenu">
+                    <li><a href="../ANIMACION4/nave.html">Nave espacial</a></li>
+                    <li><a href="../ANIMACION5/abeja.html">Abeja</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="subm" href="#">Animaciones de tarjetas</a>
+                <ul class="submenu">
+                    <li><a href="../ANIMACION6/lugares.html">Turísmo Perú</a></li>
+                    <li><a href="../ANIMACION7/lenguajes.html">HTML - CSS - JS</a></li>
+                </ul>
+            </li>
+            <li><a href="../ANIMACION8/cocos.html">Cocos</a></li>
+            <li>
+                <a class="subm" href="#">Animacion con Clippath</a>
+                <ul class="submenu">
+                    <li><a href="../ANIMACION9/payaso.html">Payaso</a></li>
+                    <li><a href="../ANIMACION9/oso.html">Oso</a></li> 
+                </ul>
+            </li>
+            <li>
+                <a class="subm" href="#">Efecto Parallax</a>
+                <ul class="submenu">
+                    <li><a href="../ANIMACION10/paisaje.html">Paisaje</a></li>
+                    <li><a href="../ANIMACION10/gimnasio.html">Afiche Gimnasio</a></li> 
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="contenedor">
+        <img class="cielo" src="img/CIELO.jpg" alt="">
+        <img class="paisaje" src="img/PAISAJE.png" alt="">
+        <img class="persona" src="img/PERSONA.png" alt="">
+        <img class="vapor" src="img/VAPOR.png" alt="">
+    </div>
+</body>
+</html>

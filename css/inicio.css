@@ -1,0 +1,302 @@
+/* ANIMACION DE BANNER */
+#contenedor {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    position: relative;
+    margin: 0 auto;
+    /*centrar el contenedor*/
+    overflow: hidden;
+    /*Oculta todo lo que contiene*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.banner{
+    width: 100%;
+    max-width: 1200px;
+    height: 600px;
+    /* border: 1px solid black; */
+    position: relative;
+    margin: 0 auto;
+    /*centrar el contenedor*/
+    overflow: hidden;
+    /*Oculta todo lo que contiene*/
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#cuadrito {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    /*obligatorio para mover el div*/
+    top: 200px;
+    right: -100px;
+    animation: cuadrito 3s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cuadrito {
+    from {
+        right: -100px;
+    }
+
+    to {
+        right: 1300px;
+    }
+}
+
+/*  */
+#cuadrito2 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: absolute;
+    /*obligatorio para mover el div*/
+    top: 200px;
+    left: -200px;
+    animation: cuadrito2 3s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cuadrito2 {
+    from {
+        left: -200px;
+    }
+
+    to {
+        left: 1300px;
+    }
+}
+
+/*  */
+#cuadrito3 {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position: absolute;
+    /*obligatorio para mover el div*/
+    top: -200px;
+    left: -200px;
+    animation: cuadrito3 3s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cuadrito3 {
+    from {
+        left: -200px;
+        top: -200px;
+    }
+
+    to {
+        left: 1200px;
+        top: 600px;
+    }
+}
+
+#cuadrito4 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position: absolute;
+    top: 0px;
+    left: 1200px;
+    animation: cuadrito4 3s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cuadrito4 {
+    from {
+        left: 1200px;
+        top: -200px;
+    }
+
+    to {
+        left: -200px;
+        top: 600px;
+    }
+}
+
+/*  */
+#cuadrito5 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 0, 149);
+    position: absolute;
+    top: 600px;
+    left: 1200px;
+    animation: cuadrito5 3s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cuadrito5 {
+    from {
+        left: 1200px;
+        top: 600px;
+    }
+
+    to {
+        left: -200px;
+        top: -200px;
+    }
+}
+
+/*  */
+#cuadrito6 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(141, 213, 255);
+    position: absolute;
+    top: 600px;
+    left: -200px;
+    animation: cuadrito6 3s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cuadrito6 {
+    from {
+        left: -200px;
+        top: 600px;
+    }
+
+    to {
+        left: 1200px;
+        top: -200px;
+    }
+}
+
+.texto {
+    width: 100%;
+    height: auto;
+    top: -600px;
+    padding: 20px;
+    position: absolute;
+    background-color: rgba(83, 75, 75, 0.493);
+    animation: texto 3s 1 forwards;
+    text-align: center;
+    color: black;
+    z-index: 2;
+}
+
+@keyframes texto {
+    0% {
+        top: -600px;
+    }
+
+    50% {
+        top: 300px;
+    }
+
+    100% {
+        top: 260px;
+    }
+}
+
+.texto:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+    background-color: aliceblue;
+    color: black;
+}
+
+/* INICIO DE CONTENEDOR */
+.imagen {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+.imagen{
+    transition: 0.4s;
+}
+
+.imagen:hover{
+    transform: scale(1.05);
+}
+.cajita{
+    position: relative;
+    width: 90%;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:40px;
+}
+/* @media (max-width: 1050px) {
+    .cajita{
+        width: 100%;
+        
+    }
+    .imagen{
+        width: 80%;
+        margin:  0 auto;
+    }
+}
+@media (max-width: 760px) {
+    .cajita{
+        flex-direction: column;
+        margin: 0;
+    }
+    .imagen{
+        margin-top: 15px;
+        width: 100%;
+    }
+} */
+h1,h2{
+    color: rgb(34, 34, 170); 
+}
+h3, h2 {
+    margin: 20px;
+}
+
+.carta{
+    width: 22.5%;
+    margin-bottom: 20px;
+    /* flex:1 1 250px; */
+}
+@media (max-width: 800px){
+    .cajita{
+        width: 100%;
+    }
+    .carta{
+        width: 30%;
+    }
+
+}
+@media (max-width: 650px){
+    .cajita{
+        width: 100%;
+    }
+    .carta{
+        width: 33.3%;
+    }
+
+}
+
+@media (max-width: 550px){
+
+    .carta{
+        width: 80%;
+    }
+
+}
+.pie {
+    text-align: center;
+    color: white;
+    background-color: rgb(34, 34, 170);
+    margin-top: 40px;
+    padding: 20px;
+}
+.pie img{
+    width: 120px;
+    border-radius: 50%;
+}

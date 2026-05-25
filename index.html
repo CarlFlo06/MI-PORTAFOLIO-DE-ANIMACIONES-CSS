@@ -6,371 +6,153 @@
     <title>MI PORTAFOLIO DE ANIMACIONES CSS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/menu.css">
-    <style>
-        /* ANIMACION DE BANNER */
-        #contenedor {
-            width: 100%;
-            height: 600px;
-            /* border: 1px solid black; */
-            position: relative;
-            margin: 0 auto;
-            /*centrar el contenedor*/
-            overflow: hidden;
-            /*Oculta todo lo que contiene*/
-        }
-        .banner{
-            width: 100%;
-            max-width: 1200px;
-            height: 600px;
-            /* border: 1px solid black; */
-            position: relative;
-            margin: 0 auto;
-            /*centrar el contenedor*/
-            overflow: hidden;
-            /*Oculta todo lo que contiene*/
-        }
-
-        #cuadrito {
-            width: 100%;
-            width: 200px;
-            height: 200px;
-            background-color: red;
-            position: absolute;
-            /*obligatorio para mover el div*/
-            top: 200px;
-            right: -100px;
-            animation: cuadrito 3s infinite;
-            animation-timing-function: linear;
-        }
-
-        @keyframes cuadrito {
-            from {
-                right: -100px;
-            }
-
-            to {
-                right: 1300px;
-            }
-        }
-
-        /*  */
-        #cuadrito2 {
-            width: 200px;
-            height: 200px;
-            background-color: blue;
-            position: absolute;
-            /*obligatorio para mover el div*/
-            top: 200px;
-            left: -200px;
-            animation: cuadrito2 3s infinite;
-            animation-timing-function: linear;
-        }
-
-        @keyframes cuadrito2 {
-            from {
-                left: -200px;
-            }
-
-            to {
-                left: 1300px;
-            }
-        }
-
-        /*  */
-        #cuadrito3 {
-            width: 200px;
-            height: 200px;
-            background-color: green;
-            position: absolute;
-            /*obligatorio para mover el div*/
-            top: -200px;
-            left: -200px;
-            animation: cuadrito3 3s infinite;
-            animation-timing-function: linear;
-        }
-
-        @keyframes cuadrito3 {
-            from {
-                left: -200px;
-                top: -200px;
-            }
-
-            to {
-                left: 1200px;
-                top: 600px;
-            }
-        }
-
-        #cuadrito4 {
-            width: 200px;
-            height: 200px;
-            background-color: yellow;
-            position: absolute;
-            top: 0px;
-            left: 1200px;
-            animation: cuadrito4 3s infinite;
-            animation-timing-function: linear;
-        }
-
-        @keyframes cuadrito4 {
-            from {
-                left: 1200px;
-                top: -200px;
-            }
-
-            to {
-                left: -200px;
-                top: 600px;
-            }
-        }
-
-        /*  */
-        #cuadrito5 {
-            width: 200px;
-            height: 200px;
-            background-color: rgb(255, 0, 149);
-            position: absolute;
-            top: 600px;
-            left: 1200px;
-            animation: cuadrito5 3s infinite;
-            animation-timing-function: linear;
-        }
-
-        @keyframes cuadrito5 {
-            from {
-                left: 1200px;
-                top: 600px;
-            }
-
-            to {
-                left: -200px;
-                top: -200px;
-            }
-        }
-
-        /*  */
-        #cuadrito6 {
-            width: 200px;
-            height: 200px;
-            background-color: rgb(141, 213, 255);
-            position: absolute;
-            top: 600px;
-            left: -200px;
-            animation: cuadrito6 3s infinite;
-            animation-timing-function: linear;
-        }
-
-        @keyframes cuadrito6 {
-            from {
-                left: -200px;
-                top: 600px;
-            }
-
-            to {
-                left: 1200px;
-                top: -200px;
-            }
-        }
-
-        .texto {
-            width: 100%;
-            height: auto;
-            top: -600px;
-            padding: 20px;
-            position: absolute;
-            background-color: rgba(83, 75, 75, 0.493);
-            animation: texto 3s 1 forwards;
-            text-align: center;
-            color: black;
-            z-index: 2;
-        }
-
-        @keyframes texto {
-            0% {
-                top: -600px;
-            }
-
-            50% {
-                top: 300px;
-            }
-
-            100% {
-                top: 260px;
-            }
-        }
-
-        .texto:hover {
-            transition: 1s;
-            scale: 1;
-            background-color: aliceblue;
-            color: black;
-        }
-
-        .c1 img,.c2 img,.c3 img,.c4 img,.c5 img,.c6 img, .c7 img, .c8 img, .c9 img, .c10 img {
-            width: 400px;
-            height: auto;
-        }
-
-        .caja,.caja2,.caja3,.caja4 {
-            width: 100%;
-            margin-top: 50px;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        @media (max-width: 1050px) {
-            .caja,.caja2,.caja3,.caja4{
-                width: 100%;
-            }
-            .c1 img,.c2 img,.c3 img,.c4 img,.c5 img,.c6 img, .c7 img, .c8 img, .c9 img, .c10 img{
-                width: 80%;
-                margin:  0 auto;
-            }
-        }
-        @media (max-width: 760px) {
-            .caja,.caja2,.caja3, .caja4{
-                flex-direction: column;
-                margin: 0;
-            }
-            .c1 img,.c2 img,.c3 img,.c4 img,.c5 img,.c6 img, .c7 img, .c8 img, .c9 img, .c10 img{
-                margin-top: 15px;
-                width: 100%;
-            }
-        }
-        h3, h2 {
-            margin: 20px;
-        }
-
-        .c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10 {
-            width: 50%;
-            margin: 10px;
-        }
-
-        .pie {
-            text-align: center;
-            color: white;
-            background-color: rgb(34, 34, 170);
-            margin-top: 40px;
-            padding: 20px;
-        }
-        .pie img{
-            width: 120px;
-            border-radius: 50%;
-        }
-    </style>
+    <link rel="stylesheet" href="css/inicio.css">
 </head>
 
 <body>
     <nav class="menu">
-        <ul>
-            <li><a href="index.html">Inicio</a></li><br>
+        <ul class="listamenu">
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="ANIMACION1/ajedrez.html">Ajedrez</a></li>
             <li><a href="ANIMACION2/biografias.html">Biografias</a></li>
             <li><a href="ANIMACION3/megaman.html">Megaman</a></li>
-            <li><a href="ANIMACION4/nave.html">Nave espacial</a></li>
-            <li><a href="ANIMACION5/abeja.html">Abeja</a></li>
-            <li><a href="ANIMACION6/lugares.html">Turísmo Perú</a></li>
-            <li><a href="ANIMACION7/lenguajes.html">HTML - CSS - JS</a></li>
+            <li>
+                <a class="subm"  href="#">Movimiento y tiempos</a>
+                <ul class="submenu">
+                    <li><a href="ANIMACION4/nave.html">Nave espacial</a></li>
+                    <li><a href="ANIMACION5/abeja.html">Abeja</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="subm" href="#">Animaciones de tarjetas</a>
+                <ul class="submenu">
+                    <li><a href="ANIMACION6/lugares.html">Turísmo Perú</a></li>
+                    <li><a href="ANIMACION7/lenguajes.html">HTML - CSS - JS</a></li>
+                </ul>
+            </li>
             <li><a href="ANIMACION8/cocos.html">Cocos</a></li>
-            <li><a href="ANIMACION9/payaso.html">Payaso</a></li>
-            <li><a href="ANIMACION9/oso.html">Oso</a></li>
+            <li>
+                <a class="subm" href="#">Animacion con Clippath</a>
+                <ul class="submenu">
+                    <li><a href="ANIMACION9/payaso.html">Payaso</a></li>
+                    <li><a href="ANIMACION9/oso.html">Oso</a></li> 
+                </ul>
+            </li>
+            <li>
+                <a class="subm" href="#">Efecto Parallax</a>
+                <ul class="submenu">
+                    <li><a href="ANIMACION10/paisaje.html">Paisaje</a></li>
+                    <li><a href="ANIMACION10/gimnasio.html">Afiche Gimnasio</a></li> 
+                </ul>
+            </li>
         </ul>
     </nav>
 
+    
+    <div class="banner">
+        <div id="cuadrito"></div>
+        <div id="cuadrito2"></div>
+        <div id="cuadrito3"></div>
+        <div id="cuadrito4"></div>
+        <div id="cuadrito5"></div>
+        <div id="cuadrito6"></div>
+        <div class="texto">
+            <h1>MIS PROYECTOS DE ANIMACIÓN WEB</h1>
+        </div>
+    </div>
+        
     <div id="contenedor">
-        <div class="banner">
-            <div id="cuadrito"></div>
-            <div id="cuadrito2"></div>
-            <div id="cuadrito3"></div>
-            <div id="cuadrito4"></div>
-            <div id="cuadrito5"></div>
-            <div id="cuadrito6"></div>
-            <div class="texto">
-                <h1>MIS PROYECTOS DE ANIMACIÓN WEB</h1>
+
+        <div class="cajita">
+            <div class="carta">
+                <h2>Tablero de ajedrez</h2>
+                <a href="ANIMACION1/ajedrez.html">
+                    <img class="imagen" src="img/ajedrez.gif" alt="">
+                </a>
+            </div>
+            <div class="carta">
+                <h2>Animación de textos</h2>
+                <a href="ANIMACION2/biografias.html">
+                    <img class="imagen" src="img/biografias.gif" alt="">
+                </a>
+            </div>
+            <div class="carta">
+                <h2>Megaman</h2>
+                <a href="ANIMACION3/megaman.html">
+                    <img class="imagen" src="img/megaman.gif" alt="">
+                </a>
+            </div>
+            <div class="carta">
+                <h2>Nave Espacial</h2>
+                <a href="ANIMACION4/nave.html">
+                    <img class="imagen" src="img/nave.gif" alt="">
+                </a>
+            </div>
+
+            <div class="carta">
+                <h2>Abejas</h2>
+                <a href="ANIMACION5/abeja.html">
+                    <img class="imagen" src="img/abeja.jpg" alt="">
+                </a>
+            </div>
+            <div class="carta">
+                <h2>Turísmo Perú</h2>
+                <a href="ANIMACION6/lugares.html">
+                    <img class="imagen" src="img/peru.jpg" alt="">
+                </a>
+            </div>
+            <div class="carta">
+                <h2>HTML - CSS - JS</h2>
+                <a href="ANIMACION7/lenguajes.html">
+                    <img class="imagen" src="img/html_css_js.jpg" alt="">
+                </a>
+            </div>
+            <div class="carta">
+                <h2>Animación de cocos</h2>
+                <a href="ANIMACION8/cocos.html">
+                    <img class="imagen" src="img/coco.avif" alt="">
+                </a>
+            </div>
+        
+            <div class="carta">
+                <h2>Animación de payaso</h2>
+                <a href="ANIMACION9/payaso.html">
+                    <img class="imagen" src="img/payaso.jpg" alt="">
+                </a>
+            </div>
+             <div class="carta">
+                <h2>Animación de oso</h2>
+                <a href="ANIMACION9/oso.html">
+                    <img class="imagen" src="img/osojpg.jpg" alt="">
+                </a>
+            </div>
+            <div class="carta">
+                <h2>Animación de paisaje</h2>
+                <a href="ANIMACION10/paisaje.html">
+                    <img class="imagen" src="img/paisaje.jpg" alt="">
+                </a>
+            </div>
+            <div class="carta">
+                <h2>Animación de afiche GYM</h2>
+                <a href="ANIMACION10/gimnasio.html">
+                    <img class="imagen" src="img/gimnasio.jpg" alt="">
+                </a>
             </div>
         </div>
-        
-    </div>
-    <div class="caja">
-        <div class="c1">
-            <h2>Tablero de ajedrez</h2>
-            <a href="ANIMACION1/ajedrez.html">
-                <img src="img/ajedrez.gif" alt="">
-            </a>
-        </div>
-        <div class="c2">
-            <h2>Animación de textos</h2>
-            <a href="ANIMACION2/biografias.html">
-                <img src="img/biografias.gif" alt="">
-            </a>
 
+        <div class="cajita">
         </div>
     </div>
-    <div class="caja2">
-        <div class="c3">
-            <h2>Megaman</h2>
-            <a href="ANIMACION3/megaman.html">
-                <img src="img/megaman.gif" alt="">
-            </a>
-        </div>
-        <div class="c4">
-            <h2>Nave Espacial</h2>
-            <a href="ANIMACION4/nave.html">
-                <img src="img/nave.gif" alt="">
-            </a>
-        </div>
-    </div>
-    <div class="caja3">
-        <div class="c5">
-            <h2>Abejas</h2>
-            <a href="ANIMACION5/abeja.html">
-                <img src="img/abeja.jpg" alt="">
-            </a>
-        </div>
-        <div class="c6">
-            <h2>Lugares turísticos del Perú</h2>
-            <a href="ANIMACION6/lugares.html">
-                <img src="img/peru.jpg" alt="">
-            </a>
-        </div>
-    </div>
-    <div class="caja3">
-        <div class="c7">
-            <h2>HTML - CSS - JS</h2>
-            <a href="ANIMACION7/lenguajes.html">
-                <img src="img/html_css_js.jpg" alt="">
-            </a>
-        </div>
-        <div class="c8">
-            <h2>Animación de cocos</h2>
-            <a href="ANIMACION8/cocos.html">
-                <img src="img/coco.avif" alt="">
-            </a>
-        </div>
-    </div>
-    <div class="caja4">
-        <div class="c9">
-            <h2>Animación de payaso</h2>
-            <a href="ANIMACION9/payaso.html">
-                <img src="img/payaso.jpg" alt="">
-            </a>
-        </div>
-        <div class="c10">
-            <h2>Animación de oso</h2>
-            <a href="ANIMACION9/oso.html">
-                <img src="img/osojpg.jpg" alt="">
-            </a>
-        </div>
-    </div>
+
+    <!-- Pie de página -->
+    <footer class="pie">
+        <h3>© 2026 Todos los derechos reservados</h3>
+        <hr>
+        <h3>Proyecto elaborado por Carlos Daniel Flores Huauya</h3> <img src="img/flores.jpg" alt="">
+    </footer>
 </body>
-<footer class="pie">
-    <h3>© 2026 Todos los derechos reservados</h3>
-    <hr>
-    <h3>Proyecto elaborado por Carlos Daniel Flores Huauya</h3> <img src="img/flores.jpg" alt="">
-</footer>
+
 </html>

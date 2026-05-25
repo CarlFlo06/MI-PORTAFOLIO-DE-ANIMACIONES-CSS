@@ -1,9 +1,9 @@
-.submenu {
+.sub {
     width: 100%;
     margin-top: 30px;
 }
 
-.submenu ul {
+.sub ul {
     padding: 0;
     margin: 0;
     display: flex;
@@ -14,11 +14,11 @@
     list-style: none;
 }
 
-.submenu li {
+.sub li {
     list-style: none;
 }
 
-.submenu li a {
+.sub li a {
     display: block;
     padding: 15px 25px;
     background-color: brown;
@@ -29,7 +29,7 @@
     transition: 0.3s;
 }
 
-.submenu li a:hover {
+.sub li a:hover {
     background-color: rgb(167, 103, 103);
     transform: scale(1.05);
 }

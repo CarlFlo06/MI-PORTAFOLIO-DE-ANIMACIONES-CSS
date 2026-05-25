@@ -1,57 +1,72 @@
 * {
-    padding: 0px;
-    margin: 0px;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
 .menu {
-    display: flex;
-    justify-content: center;
+    display: flex; 
+    justify-content: center; 
     align-items: center;
-    height: auto;
-    margin: 0;
-    background-color: rgb(34, 34, 170);
+    background-color: rgb(34, 34, 170); 
     padding: 10px;
-}
-
-.menu ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
     height: auto;
 }
 
-.menu ul li {
+.listamenu {
+    display: flex;
     list-style: none;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap; 
 }
 
-.menu ul li a {
-    text-align: center;
-    width: 100px;
-    display: block;
-    /* background-color: rgb(102, 91, 255); */
-    /* padding: 10px; */
-    margin: 5px;
+.menu .listamenu li{
+    position: relative;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 
-.menu ul li a {
+.menu .listamenu li a {
+    width: 120px;
+    height: 60px;
     text-align: center;
-    text-decoration: none;
-    padding: 10px;
+    justify-content: center;
+    align-items: center; 
+    display: flex;
     color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
 }
-
-.menu ul li a:hover {
+.listamenu li:hover {
     background-color: rgb(102, 91, 255);
     border-bottom: 2px solid white;
-    color: white;
 }
 
-.menu ul li a {
-    font-weight: bold;
-    font-size: 15px;
+/* Submenu de inicio */
+.submenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(34, 34, 170);
+    min-width: 100px;
+    z-index: 100;
+}
+.submenu li{
+    list-style: none;
+}
+.submenu li a{
+    list-style: none;
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: left;
+}
+.listamenu li:hover .submenu{
+    display: block;
 }

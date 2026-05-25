@@ -1,0 +1,280 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/ladrillo.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.contenedor{
+    width: 600px;
+    height: 900px;
+    border: 1px solid white;
+    margin: 0 auto;/* Centrar el div */
+    background-color: #161617;
+    position: relative;
+    top: 1vh;
+    overflow: hidden;
+}
+.franja1{
+    width: 720px;
+    height: 500px;
+    background-color: #ebb61e;
+    filter: sepia(100%) saturate(200%) brightness(110%);
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 50%, 100% 100%, 0 50%);
+}
+.franja2{
+    width: 270px;
+    height: 400px;
+    top: 400px;
+    left: 40px;
+    z-index: 2;
+    background-color: #ebb61e;
+    position: absolute;
+    clip-path: polygon(0 0, 100% 24%, 100% 100%, 0 100%);
+    animation: franja2 2s 1 forwards;
+}
+@keyframes franja2{
+    from{
+        top: 400px;
+        left: -100px;
+        
+    }
+    to{
+        top: 400px;
+        left: 40px;
+    }
+}
+.franja3{
+    width: 600px;
+    height: 900px;
+    z-index: 0;
+    background-color: rgba(145, 135, 135, 0.103);
+    position: absolute;
+    top: 0px;
+    clip-path: polygon(0 0, 100% 0%, 100% 68%, 0 45%);
+}
+.persona{
+    width: 400px;
+    position: absolute;
+    z-index: 1;
+    animation: persona 15s 1 forwards;
+}
+@keyframes persona{
+    from{
+        top: 100px;
+        scale: 100%;
+    }
+    to{
+        top: 100px;
+        scale: 130%;
+    }
+}
+.fondo{
+    width: 900px;
+    height: 700px;
+    left: 1200px;
+    animation: fondo 15s 1 forwards;
+}
+@keyframes fondo{
+    from{
+        left: 1200px;
+        scale: 110%;
+    }
+    to{
+        left: 1200px;
+        scale: 90%;
+    }
+}
+.logo img{
+    width: 100px;
+}
+.logo{
+    width: 200px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 770px;
+    color: white;
+    left: 350px;
+    z-index: 2;
+    animation: logo 2s 1 forwards;
+}
+@keyframes logo{
+    from{
+        opacity: 0;
+        top: 800px;
+    }
+    to{
+        opacity: 1;
+        top: 770px;
+    }
+}
+.telefono{
+    width: 240px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.icono1{
+    text-align: center;
+    font-size: 15px;
+    color: #161617;
+    background-color: #ebb61e;
+    width: 33.5px;
+    padding-top: 5px;
+    height: 30px;
+}
+.ubicacion{
+    width: 240px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.ubicacion p{
+    font-size: 12px;
+}
+.icono2{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 15px;
+    color: #161617;
+    background-color: #ebb61e;
+    width: 60px;
+    height: 30px;
+}
+.redes{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.redes p{
+    font-size: 10px;
+}
+.icono3{
+    text-align: center;
+    color: #161617;
+    background-color: #ebb61e;
+    padding-top: 5px;
+    width: 35px;
+    height: 30px;
+    
+}
+.texto{
+    position: relative;
+    width: 400px;
+    height: 120px;
+    left: 350px;
+    font-size: 20px;
+    padding: 0px;
+    top: 30px;
+    color: white;
+    z-index: 1;
+    margin: 0;
+    animation: texto 2s 1 forwards;
+}
+@keyframes texto{
+    from{
+        opacity: 0;
+        top: -30px;
+    }
+    to{
+        opacity: 1;
+        top: 30px;
+    }
+}
+.texto2{
+    width: 280px;
+    position: absolute;
+    left: 40px;
+    top: 830px;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    animation: texto2 2s 1 forwards;
+}
+@keyframes texto2{
+    from{
+        opacity: 0;
+        top: 860px;
+    }
+    to{
+        opacity: 1;
+        top: 830px;
+    }
+}
+.texto3{
+    position: absolute;
+    left: 330px;
+    top: 620px;
+    color: white;
+    animation: texto3 2s 1 forwards;
+}
+@keyframes texto3{
+    from{
+        opacity: 0;
+        top: 650px;
+    }
+    to{
+        opacity: 1;
+        top: 620px;
+    }
+}
+.titulo{
+    margin: 0;
+    padding: 0px;
+}
+.titulo2{
+    width: 200px;
+    height: 60px;
+    left: 20px;
+    font-size: 20px;
+    margin-top: 60px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.ti21{
+    position: absolute;
+
+}
+.ti22{
+    position: absolute;
+    top: 25px;
+}
+.horario{
+    position: absolute;
+    width: 270px;
+    top: 330px;
+    left: 15px;
+    font-size: 13px;
+}
+.lista{
+    position: absolute;
+    width: 280px;
+    left: 35px;
+    font-size: 13px;
+    color: black;
+}
+.ti11{
+    position: absolute;
+    color: #ebb61e;
+}
+.ti12{
+    position: absolute;
+    top: 34px
+}
+.ti13{
+    position: absolute;
+    top: 68px;
+}
