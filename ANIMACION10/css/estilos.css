@@ -28,7 +28,7 @@ body{
     width: 720px;
     height: 500px;
     background-color: #ebb61e;
-    filter: sepia(100%) saturate(200%) brightness(110%);
+    /* filter: sepia(100%) saturate(200%) brightness(110%); */
     position: absolute;
     top: 100px;
     z-index: 1;
