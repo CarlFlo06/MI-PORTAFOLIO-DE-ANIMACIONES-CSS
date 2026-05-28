@@ -15,7 +15,8 @@ body{
     }
 }
 .contenedor{
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     height: 900px;
     border: 1px solid white;
     margin: 0 auto;/* Centrar el div */

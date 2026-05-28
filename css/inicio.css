@@ -296,7 +296,19 @@ h3, h2 {
     margin-top: 40px;
     padding: 20px;
 }
-.pie img{
-    width: 120px;
+.pieimg{
+    width: 140px;
+    height: 140px;
+    background-color: red;
     border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.foto{
+    width: 150px;
+    left: -5px;
+    position: absolute;
+
 }

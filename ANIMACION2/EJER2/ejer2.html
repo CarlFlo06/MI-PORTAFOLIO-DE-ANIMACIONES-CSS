@@ -9,7 +9,7 @@
     <style>
       body {
         text-align: center;
-        background-color: rgb(247, 250, 221);
+        background-color: black;
       }
 
       .img1 {
@@ -58,7 +58,7 @@
           color: rgba(255, 0, 0, 0);
         }
         to {
-          color: rgba(13, 0, 255, 0.86);
+          color: white;
         }
       }
       .img2 {
@@ -69,6 +69,7 @@
         animation-iteration-count: 1;
         animation-delay: 8s;
         animation-fill-mode: forwards;
+        background-color: white;
       }
       @keyframes foto2 {
         from {
@@ -91,7 +92,7 @@
           color: rgba(255, 0, 0, 0);
         }
         to {
-          color: rgba(13, 0, 255, 0.86);
+          color: white;
         }
       }
     </style>
@@ -101,7 +102,15 @@
       <ul class="listamenu">
         <li><a href="../../index.html">Inicio</a></li>
         <li><a href="../../ANIMACION1/ajedrez.html">Ajedrez</a></li>
-        <li><a href="../../ANIMACION2/biografias.html">Biografias</a></li>
+        <!-- <li><a href="../../ANIMACION2/biografias.html">Biografias</a></li> -->
+        <li>
+          <a class="subm" href="#">Animación de textos</a>
+          <ul class="submenu">
+            <li><a href="../../ANIMACION2/EJER1/ejer1.html">Manuel S. Corrales</a></li>
+            <li><a href="../../ANIMACION2/EJER2/ejer2.html">Sam Altman</a></li>
+            <li><a href="../../ANIMACION2/EJER3/ejer3.html">Dra. Lisa Su</a></li>
+          </ul>
+        </li>
         <li><a href="../../ANIMACION3/megaman.html">Megaman</a></li>
         <li>
           <a class="subm"  href="#">Movimiento y tiempos</a>
@@ -134,7 +143,7 @@
           </li>
         </ul>
     </nav>
-    <div class="submenu">
+    <!-- <div class="sub">
       <br />
       <ul>
         <li><a href="../biografias.html">Volver</a></li>
@@ -142,7 +151,7 @@
         <li><a href="../EJER2/ejer2.html">Sam Altman</a></li>
         <li><a href="../EJER3/ejer3.html">Dra. Lisa Su</a></li>
       </ul>
-    </div>
+    </div> -->
     <br /><br />
     <img class="img1" src="img/foto.jpg" alt="" /><br><br>
     <h1>SAM ALTMAN</h1><br><br>
@@ -155,7 +164,9 @@
       desarrollo de la inteligencia artificial. Su patrimonio neto actual es de
       2100 millones de dólares, de acuerdo con Forbes.
     </p>
+    <br>
     <img class="img2" src="img/foto2.png" alt="" />
+    <br><br>
     <p class="p2">
       Altman es el CEO de OpenAI. OpenAI es una empresa de investigación, que se
       inicia como una ONG, cuyo objetivo es promover la inteligencia artificial

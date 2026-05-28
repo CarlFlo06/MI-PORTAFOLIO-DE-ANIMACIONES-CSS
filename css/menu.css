@@ -27,7 +27,7 @@
 }
 
 .menu .listamenu li a {
-    width: 120px;
+    width: 130px;
     height: 60px;
     text-align: center;
     justify-content: center;
@@ -53,20 +53,53 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: rgb(34, 34, 170);
+    background-color: rgb(67, 67, 163);
     min-width: 100px;
-    z-index: 100;
+    z-index: 10;
 }
 .submenu li{
     list-style: none;
 }
 .submenu li a{
     list-style: none;
-    display: block;
-    width: 100%;
-    height: auto;
-    text-align: left;
 }
 .listamenu li:hover .submenu{
     display: block;
+}
+
+/* PARA MENU DE ANIMACION DE TEXTOS */
+.sub {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.sub ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+.sub li {
+    list-style: none;
+}
+
+.sub li a {
+    display: block;
+    padding: 15px 25px;
+    background-color: rgb(34, 34, 170); 
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.sub li a:hover {
+    background-color: rgb(102, 91, 255);
+    transform: scale(1.05);
 }

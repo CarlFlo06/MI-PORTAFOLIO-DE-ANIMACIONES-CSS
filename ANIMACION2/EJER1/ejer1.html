@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS ANIMATION</title>
     <link rel="stylesheet" href="../../css/menu.css" />
-    <link rel="stylesheet" href="../../css/submenu.css" />
     <style type="text/css">
       body {
         text-align: center;
@@ -28,6 +27,10 @@
           color: rgb(255, 255, 255);
         }
       }
+      .caja{
+        overflow: hidden;
+        margin-top: 50px;
+      }
       p {
         color: rgba(0, 0, 0, 0);
         animation-name: parrafo;
@@ -36,6 +39,7 @@
         animation-delay: 3s;
         animation-direction: alternate;
         animation-fill-mode: forwards; /*backwards es como al principio y fordwards como el final*/
+        
       }
       @keyframes parrafo {
         from {
@@ -65,9 +69,6 @@
           opacity: 1;
         }
       }
-      .caja {
-        margin-top: 100px;
-      }
     </style>
   </head>
   <body>
@@ -75,7 +76,15 @@
       <ul class="listamenu">
         <li><a href="../../index.html">Inicio</a></li>
         <li><a href="../../ANIMACION1/ajedrez.html">Ajedrez</a></li>
-        <li><a href="../../ANIMACION2/biografias.html">Biografias</a></li>
+        <!-- <li><a href="../../ANIMACION2/biografias.html">Biografias</a></li> -->
+        <li>
+          <a class="subm" href="#">Animación de textos</a>
+          <ul class="submenu">
+            <li><a href="../../ANIMACION2/EJER1/ejer1.html">Manuel S. Corrales</a></li>
+            <li><a href="../../ANIMACION2/EJER2/ejer2.html">Sam Altman</a></li>
+            <li><a href="../../ANIMACION2/EJER3/ejer3.html">Dra. Lisa Su</a></li>
+          </ul>
+        </li>
         <li><a href="../../ANIMACION3/megaman.html">Megaman</a></li>
         <li>
           <a class="subm"  href="#">Movimiento y tiempos</a>
@@ -108,7 +117,7 @@
           </li>
         </ul>
     </nav>
-    <div class="submenu">
+    <!-- <div class="sub">
       <br />
       <ul>
         <li><a href="../biografias.html">Volver</a></li>
@@ -116,7 +125,7 @@
         <li><a href="../EJER2/ejer2.html">Sam Altman</a></li>
         <li><a href="../EJER3/ejer3.html">Dra. Lisa Su</a></li>
       </ul>
-    </div>
+    </div> -->
     <div class="caja">
       <h1>MANUEL SEOANE CORRALES</h1>
       <br><br>
