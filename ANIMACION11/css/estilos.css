@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.nombre{
+    position: absolute;
+    width: 500px;
+    height: 800px;
+    fill: transparent;
+    stroke: white;
+    stroke-width: 80;
+    animation: rellenar 7s linear forwards 1s;
+    stroke-dasharray: 50000;
+    stroke-dashoffset: 50000;
+    /* animation: escribir 6s 1 linear forwards 1s,
+    rellenar 1s ease forwards 3.5s; */
+    z-index: 3;
+}
+@keyframes rellenar{
+    0%{
+        stroke-dashoffset: 50000;
+        fill: transparent;
+    }
+
+    70%{
+        stroke-dashoffset: 0;
+        fill: transparent;
+    }
+    /* 55%{
+        stroke-dashoffset: 0;
+        fill: white;
+    } */
+    100%{
+        stroke-dashoffset: 0;
+        fill: white;
+    }
+}
+.contenedor{
+    position: relative;
+    width: 500px;
+    height: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.fondo img{
+    position: absolute;
+    width: 500px;
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fondo 20s 1 forwards;
+    z-index: 0;
+    
+}
+@keyframes fondo{
+    from{
+        scale: 140%;
+    }
+    to{
+        scale: 100%;
+    }
+}
+.arbusto img{
+    width: 500px;
+    height: 800px;
+    position: absolute;
+    z-index: 1;
+    animation: arbusto 15s 1 forwards;
+}
+@keyframes arbusto{
+    from{
+        scale: 100%;
+    }
+    to{
+        scale: 500%;
+    }
+}
+/* @keyframes escribir {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes rellenar{
+    to{
+        
+        fill: white;
+    }
+} */
