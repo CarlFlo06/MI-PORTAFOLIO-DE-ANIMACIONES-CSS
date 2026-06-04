@@ -7,8 +7,8 @@ body{
 }
 .nombre{
     position: absolute;
-    width: 500px;
-    height: 800px;
+    width: 400px;
+    height: 700px;
     fill: transparent;
     stroke: white;
     stroke-width: 80;
@@ -40,15 +40,16 @@ body{
 }
 .contenedor{
     position: relative;
-    width: 500px;
-    height: 800px;
+    width: 100%;
+    max-width: 400px;
+    height: 700px;
     overflow: hidden;
     margin: 0 auto;
 }
 .fondo img{
     position: absolute;
-    width: 500px;
-    height: 800px;
+    width: 400px;
+    height: 700px;
     background-size: cover;
     background-repeat: no-repeat;
     animation: fondo 20s 1 forwards;
@@ -64,8 +65,8 @@ body{
     }
 }
 .arbusto img{
-    width: 500px;
-    height: 800px;
+    width: 400px;
+    height: 700px;
     position: absolute;
     z-index: 1;
     animation: arbusto 15s 1 forwards;
