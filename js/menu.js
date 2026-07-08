@@ -157,7 +157,7 @@ document.getElementById("menu").innerHTML = `
 
         <li>
             <a href="${BASE}ANIMACION12/salto.html">
-                 VIDEO ANIMACION 1 - BLENDER
+                 Video animación 1 - Blender
             </a>
         </li>
 
